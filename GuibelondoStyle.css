@@ -25,6 +25,10 @@ main{
 header{
     grid-area: header;
 }
+.mainDiv{
+    position: fixed
+}
+
 .left-side{
     position: relative;
     background: #17795a;
@@ -85,28 +89,6 @@ nav a:hover{
     color: #28c997;
     transition: all 0.2s ease-in;
 }
-.right-side{
-    flex: 10;
-    height: 100vh;
-    background-image: url(/image/alonedark.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.right-side .content{
-    position: absolute;
-    background-color: rgba(09, 10, 10, 0.6);
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-
 p{
     font-size: 2em;
     color: white;
@@ -142,4 +124,5 @@ button:hover{
 }
 main{
     grid-area: content;
+    height: 1478px;
 }
