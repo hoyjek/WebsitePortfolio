@@ -13,10 +13,8 @@ body{
     'nav content'
     'nav content';
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 40px 1fr;
 }
-header,
-.divNav,
 main{
     background-color: steelblue;
     color: #fff;
@@ -26,7 +24,13 @@ header{
     grid-area: header;
 }
 .mainDiv{
-    position: fixed
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 38px;
+    border: skyblue solid 1px;
+    background-color: #17795a;
 }
 
 .left-side{
@@ -41,9 +45,7 @@ header{
     text-align: center;
     top: 5%;
 }
-.avatar p{
-    font-size: 19px;
-}
+
 .avatar img{
     padding: 10px;
     width: 50%;
@@ -110,7 +112,6 @@ button{
     margin: 2rem;
     transition: 0.7s;
     font-family: sans-serif;
-    
 }
 button:hover{
     background-color: #28c997;
@@ -121,6 +122,10 @@ button:hover{
 }
 .divNav{
     grid-area: nav;
+    position: fixed;
+    width: 16rem;
+    margin-top: 40px;
+
 }
 main{
     grid-area: content;
