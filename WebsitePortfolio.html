@@ -21,280 +21,350 @@
         margin: 0;
         padding: 0;
         text-decoration: none;
+        box-sizing: border-box;
       }
       body {
         box-sizing: border-box;
+        background-color: #e3eded;
       }
       .NavSideBar {
         position: fixed;
-        background-color: rgb(12, 173, 213);
+        background-color: #5f413e;
         width: 272px;
         height: 100%;
         top: 0;
         left: 0;
         z-index: 1;
       }
-      img {
+      #profile {
         height: 160px;
         width: 160px;
         border-radius: 80px;
-        border: 8px solid red;
+        border: 8px solid #45392e;
         margin-top: 282px;
         margin-left: 55px;
+        filter: grayscale(40%);
       }
       ul {
         line-height: 40px;
         top: 460px;
         position: absolute;
-        left: 50px;
+        left: 60px;
         text-align: center;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: #e3eded;
       }
       .align-self-start {
         flex-wrap: nowrap;
         justify-content: flex-start;
       }
       ul li:hover {
-        color: aqua;
+        color: rgb(7, 8, 8);
         margin-left: 15px;
         transition: 0.4s;
       }
       .content {
-        margin-left: 310px;
+        margin-left: 270px;
         margin-top: 300px;
+        margin-bottom: 300px;
+      }
+      #about {
+        margin-bottom: 492px;
+        border-left: 2px;
+        padding-left: 50px;
+      }
+      #experience {
+        /* margin-top: 200px; */
+        /* border: 2px solid red; */
+        padding-top: 305px;
+        margin-bottom: 492px;
+        padding-left: 50px;
+      }
+      #education {
+        padding-top: 310px;
+        margin-bottom: 592px;
+        border-top: 350px;
+        padding-left: 50px;
+      }
+      #skills {
+        padding-top: 310px;
+        margin-bottom: 800px;
+        padding-left: 50px;
+      }
+      #interests {
+        padding-top: 305px;
+        margin-bottom: 590px;
+        padding-left: 50px;
+      }
+      #testimonies {
+        margin-bottom: 592px;
+        padding-top: 320px;
+        padding-left: 50px;
+      }
+      #html {
+        height: 50px;
+        width: 50px;
+      }
+      #css {
+        height: 52px;
+        width: 52px;
+      }
+      #bootstrap {
+        height: 39px;
+        width: 41px;
+        opacity: 0.7;
+      }
+      #linkedin {
+        height: 52px;
+        width: 52px;
+        margin-right: 13px;
+      }
+      #fb {
+        height: 52px;
+        width: 52px;
+        margin-right: 13px;
+        border-radius: 26px;
+      }
+      #tweeter {
+        height: 50px;
+        width: 50px;
+        margin-right: 13px;
+      }
+      #instagram {
+        height: 52px;
+        width: 52px;
+      }
+      table {
+        /* border: 2px solid red;
+        border-collapse: collapse; */
+        border-spacing: 4px;
+        height: 650px;
+        width: 1300px;
+      }
+      #table1 {
+        padding-top: 10px;
+      }
+      p {
+        font-family: "Courier New", Courier, monospace;
+        font-size: medium;
+        color: #08030e;
+      }
+      #name {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        font-size: 80px;
+        border: 0;
+        padding: 0;
+        background: linear-gradient(
+          90deg,
+          #b7b6ba,
+          #817f85,
+          #42454e,
+          #4d494f,
+          #2a2d30,
+          #141313
+        );
+        background-size: 50%;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        animation: animate 10s linear infinite;
+      }
+      @keyframes animate {
+        0% {
+          background-position: 0%;
+        }
+        100% {
+          background-position: 400%;
+        }
+      }
+      h2 {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: #45392e;
       }
     </style>
   </head>
   <body>
     <div class="NavSideBar">
       <img
+        id="profile"
         src="https://lh3.googleusercontent.com/a/ALm5wu0HyJgvsOOp3-Q1mQJkWpz26cRTkUwQZpqR1nQM4Q=s288-p-rw-no"
       />
       <ul style="list-style-type: none">
-        <li>ABOUT</li>
-        <li>EXPERIENCE</li>
-        <li>EDUCATION</li>
-        <li>SKILLS</li>
-        <li>INTERESTS</li>
-        <li>TESTIMONIES</li>
+        <a href="#"><li>ABOUT</li></a>
+        <a href="#experience"><li>EXPERIENCE</li></a>
+        <a href="#education"><li>EDUCATION</li></a>
+        <a href="#skills"> <li>SKILLS</li></a>
+        <a href="#interests"><li>INTERESTS</li></a>
+        <a href="#testimonies"> <li>TESTIMONIES</li></a>
       </ul>
     </div>
+    <!-- Main Content -->
     <div class="content">
-      <h2>profile name</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quod
-        accusantium eaque, ex doloribus eveniet unde nihil alias consectetur
-        magni mollitia autem, quo, et fugit quam laborum corporis voluptatibus!
-        Quaerat animi vel saepe voluptatum sequi voluptatem odio consectetur
-        unde ipsam a. Sapiente saepe, est et expedita totam fugit esse at
-        corporis odit voluptatum, laborum voluptate culpa omnis nostrum ducimus
-        ab eius, reprehenderit voluptatibus libero sint accusantium dolores
-        harum? Voluptates, aperiam nobis! Rerum omnis vero consequatur veritatis
-        esse, nihil ratione voluptas tempore excepturi laudantium magnam tenetur
-        neque laborum eos sapiente? Veritatis corporis labore ab quae
-        consectetur aliquam repellat perferendis eligendi natus inventore iste
-        esse similique porro tempora quam deleniti magni accusamus debitis
-        provident, velit autem, reiciendis, at harum! Reprehenderit expedita
-        aperiam dicta. Cum ad tempore dignissimos provident, qui perspiciatis.
-        Autem omnis asperiores sapiente illo commodi architecto, temporibus
-        maxime quasi accusantium possimus! Nisi tenetur, neque blanditiis odio
-        autem veniam minus adipisci? Veniam repellat architecto neque temporibus
-        laudantium eaque ad excepturi alias sint minima, saepe animi sunt. Id
-        atque, minus, sed dicta odio cum sequi veniam a quos rem facere odit
-        quidem distinctio, soluta iste? Consectetur, vitae consequatur corrupti,
-        ducimus eius suscipit nulla provident sequi tempore eum doloribus vero.
-        Aliquam assumenda quis quo accusamus iste labore ut nihil est.
-        Repudiandae pariatur facilis, quam ipsam maiores fugit asperiores
-        eligendi consequatur? Obcaecati earum porro cumque consectetur ipsa
-        minus repellat veritatis laborum provident quo non, quisquam saepe
-        tempore velit harum suscipit nam sunt? Eveniet laudantium perspiciatis
-        fuga, non facilis atque quod, eaque repellendus libero quas rerum
-        impedit molestias unde nesciunt suscipit, nihil mollitia corporis
-        tempora voluptatibus! Voluptatum cum magni minus distinctio, suscipit
-        repellat quae eaque magnam officiis non reprehenderit ipsum omnis
-        fugiat, velit dolores harum quisquam qui fuga aliquid natus repudiandae
-        itaque nisi obcaecati. Nobis temporibus est quae maiores similique
-        incidunt voluptates atque, ab asperiores ratione.
-      </p>
-      <h2>profile name</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quod
-        accusantium eaque, ex doloribus eveniet unde nihil alias consectetur
-        magni mollitia autem, quo, et fugit quam laborum corporis voluptatibus!
-        Quaerat animi vel saepe voluptatum sequi voluptatem odio consectetur
-        unde ipsam a. Sapiente saepe, est et expedita totam fugit esse at
-        corporis odit voluptatum, laborum voluptate culpa omnis nostrum ducimus
-        ab eius, reprehenderit voluptatibus libero sint accusantium dolores
-        harum? Voluptates, aperiam nobis! Rerum omnis vero consequatur veritatis
-        esse, nihil ratione voluptas tempore excepturi laudantium magnam tenetur
-        neque laborum eos sapiente? Veritatis corporis labore ab quae
-        consectetur aliquam repellat perferendis eligendi natus inventore iste
-        esse similique porro tempora quam deleniti magni accusamus debitis
-        provident, velit autem, reiciendis, at harum! Reprehenderit expedita
-        aperiam dicta. Cum ad tempore dignissimos provident, qui perspiciatis.
-        Autem omnis asperiores sapiente illo commodi architecto, temporibus
-        maxime quasi accusantium possimus! Nisi tenetur, neque blanditiis odio
-        autem veniam minus adipisci? Veniam repellat architecto neque temporibus
-        laudantium eaque ad excepturi alias sint minima, saepe animi sunt. Id
-        atque, minus, sed dicta odio cum sequi veniam a quos rem facere odit
-        quidem distinctio, soluta iste? Consectetur, vitae consequatur corrupti,
-        ducimus eius suscipit nulla provident sequi tempore eum doloribus vero.
-        Aliquam assumenda quis quo accusamus iste labore ut nihil est.
-        Repudiandae pariatur facilis, quam ipsam maiores fugit asperiores
-        eligendi consequatur? Obcaecati earum porro cumque consectetur ipsa
-        minus repellat veritatis laborum provident quo non, quisquam saepe
-        tempore velit harum suscipit nam sunt? Eveniet laudantium perspiciatis
-        fuga, non facilis atque quod, eaque repellendus libero quas rerum
-        impedit molestias unde nesciunt suscipit, nihil mollitia corporis
-        tempora voluptatibus! Voluptatum cum magni minus distinctio, suscipit
-        repellat quae eaque magnam officiis non reprehenderit ipsum omnis
-        fugiat, velit dolores harum quisquam qui fuga aliquid natus repudiandae
-        itaque nisi obcaecati. Nobis temporibus est quae maiores similique
-        incidunt voluptates atque, ab asperiores ratione.
-      </p>
-      <h2>profile name</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quod
-        accusantium eaque, ex doloribus eveniet unde nihil alias consectetur
-        magni mollitia autem, quo, et fugit quam laborum corporis voluptatibus!
-        Quaerat animi vel saepe voluptatum sequi voluptatem odio consectetur
-        unde ipsam a. Sapiente saepe, est et expedita totam fugit esse at
-        corporis odit voluptatum, laborum voluptate culpa omnis nostrum ducimus
-        ab eius, reprehenderit voluptatibus libero sint accusantium dolores
-        harum? Voluptates, aperiam nobis! Rerum omnis vero consequatur veritatis
-        esse, nihil ratione voluptas tempore excepturi laudantium magnam tenetur
-        neque laborum eos sapiente? Veritatis corporis labore ab quae
-        consectetur aliquam repellat perferendis eligendi natus inventore iste
-        esse similique porro tempora quam deleniti magni accusamus debitis
-        provident, velit autem, reiciendis, at harum! Reprehenderit expedita
-        aperiam dicta. Cum ad tempore dignissimos provident, qui perspiciatis.
-        Autem omnis asperiores sapiente illo commodi architecto, temporibus
-        maxime quasi accusantium possimus! Nisi tenetur, neque blanditiis odio
-        autem veniam minus adipisci? Veniam repellat architecto neque temporibus
-        laudantium eaque ad excepturi alias sint minima, saepe animi sunt. Id
-        atque, minus, sed dicta odio cum sequi veniam a quos rem facere odit
-        quidem distinctio, soluta iste? Consectetur, vitae consequatur corrupti,
-        ducimus eius suscipit nulla provident sequi tempore eum doloribus vero.
-        Aliquam assumenda quis quo accusamus iste labore ut nihil est.
-        Repudiandae pariatur facilis, quam ipsam maiores fugit asperiores
-        eligendi consequatur? Obcaecati earum porro cumque consectetur ipsa
-        minus repellat veritatis laborum provident quo non, quisquam saepe
-        tempore velit harum suscipit nam sunt? Eveniet laudantium perspiciatis
-        fuga, non facilis atque quod, eaque repellendus libero quas rerum
-        impedit molestias unde nesciunt suscipit, nihil mollitia corporis
-        tempora voluptatibus! Voluptatum cum magni minus distinctio, suscipit
-        repellat quae eaque magnam officiis non reprehenderit ipsum omnis
-        fugiat, velit dolores harum quisquam qui fuga aliquid natus repudiandae
-        itaque nisi obcaecati. Nobis temporibus est quae maiores similique
-        incidunt voluptates atque, ab asperiores ratione.
-      </p>
-      <h2>profile name</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quod
-        accusantium eaque, ex doloribus eveniet unde nihil alias consectetur
-        magni mollitia autem, quo, et fugit quam laborum corporis voluptatibus!
-        Quaerat animi vel saepe voluptatum sequi voluptatem odio consectetur
-        unde ipsam a. Sapiente saepe, est et expedita totam fugit esse at
-        corporis odit voluptatum, laborum voluptate culpa omnis nostrum ducimus
-        ab eius, reprehenderit voluptatibus libero sint accusantium dolores
-        harum? Voluptates, aperiam nobis! Rerum omnis vero consequatur veritatis
-        esse, nihil ratione voluptas tempore excepturi laudantium magnam tenetur
-        neque laborum eos sapiente? Veritatis corporis labore ab quae
-        consectetur aliquam repellat perferendis eligendi natus inventore iste
-        esse similique porro tempora quam deleniti magni accusamus debitis
-        provident, velit autem, reiciendis, at harum! Reprehenderit expedita
-        aperiam dicta. Cum ad tempore dignissimos provident, qui perspiciatis.
-        Autem omnis asperiores sapiente illo commodi architecto, temporibus
-        maxime quasi accusantium possimus! Nisi tenetur, neque blanditiis odio
-        autem veniam minus adipisci? Veniam repellat architecto neque temporibus
-        laudantium eaque ad excepturi alias sint minima, saepe animi sunt. Id
-        atque, minus, sed dicta odio cum sequi veniam a quos rem facere odit
-        quidem distinctio, soluta iste? Consectetur, vitae consequatur corrupti,
-        ducimus eius suscipit nulla provident sequi tempore eum doloribus vero.
-        Aliquam assumenda quis quo accusamus iste labore ut nihil est.
-        Repudiandae pariatur facilis, quam ipsam maiores fugit asperiores
-        eligendi consequatur? Obcaecati earum porro cumque consectetur ipsa
-        minus repellat veritatis laborum provident quo non, quisquam saepe
-        tempore velit harum suscipit nam sunt? Eveniet laudantium perspiciatis
-        fuga, non facilis atque quod, eaque repellendus libero quas rerum
-        impedit molestias unde nesciunt suscipit, nihil mollitia corporis
-        tempora voluptatibus! Voluptatum cum magni minus distinctio, suscipit
-        repellat quae eaque magnam officiis non reprehenderit ipsum omnis
-        fugiat, velit dolores harum quisquam qui fuga aliquid natus repudiandae
-        itaque nisi obcaecati. Nobis temporibus est quae maiores similique
-        incidunt voluptates atque, ab asperiores ratione.
-      </p>
-      <h2>profile name</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quod
-        accusantium eaque, ex doloribus eveniet unde nihil alias consectetur
-        magni mollitia autem, quo, et fugit quam laborum corporis voluptatibus!
-        Quaerat animi vel saepe voluptatum sequi voluptatem odio consectetur
-        unde ipsam a. Sapiente saepe, est et expedita totam fugit esse at
-        corporis odit voluptatum, laborum voluptate culpa omnis nostrum ducimus
-        ab eius, reprehenderit voluptatibus libero sint accusantium dolores
-        harum? Voluptates, aperiam nobis! Rerum omnis vero consequatur veritatis
-        esse, nihil ratione voluptas tempore excepturi laudantium magnam tenetur
-        neque laborum eos sapiente? Veritatis corporis labore ab quae
-        consectetur aliquam repellat perferendis eligendi natus inventore iste
-        esse similique porro tempora quam deleniti magni accusamus debitis
-        provident, velit autem, reiciendis, at harum! Reprehenderit expedita
-        aperiam dicta. Cum ad tempore dignissimos provident, qui perspiciatis.
-        Autem omnis asperiores sapiente illo commodi architecto, temporibus
-        maxime quasi accusantium possimus! Nisi tenetur, neque blanditiis odio
-        autem veniam minus adipisci? Veniam repellat architecto neque temporibus
-        laudantium eaque ad excepturi alias sint minima, saepe animi sunt. Id
-        atque, minus, sed dicta odio cum sequi veniam a quos rem facere odit
-        quidem distinctio, soluta iste? Consectetur, vitae consequatur corrupti,
-        ducimus eius suscipit nulla provident sequi tempore eum doloribus vero.
-        Aliquam assumenda quis quo accusamus iste labore ut nihil est.
-        Repudiandae pariatur facilis, quam ipsam maiores fugit asperiores
-        eligendi consequatur? Obcaecati earum porro cumque consectetur ipsa
-        minus repellat veritatis laborum provident quo non, quisquam saepe
-        tempore velit harum suscipit nam sunt? Eveniet laudantium perspiciatis
-        fuga, non facilis atque quod, eaque repellendus libero quas rerum
-        impedit molestias unde nesciunt suscipit, nihil mollitia corporis
-        tempora voluptatibus! Voluptatum cum magni minus distinctio, suscipit
-        repellat quae eaque magnam officiis non reprehenderit ipsum omnis
-        fugiat, velit dolores harum quisquam qui fuga aliquid natus repudiandae
-        itaque nisi obcaecati. Nobis temporibus est quae maiores similique
-        incidunt voluptates atque, ab asperiores ratione.
-      </p>
-      <h2>profile name</h2>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit quod
-        accusantium eaque, ex doloribus eveniet unde nihil alias consectetur
-        magni mollitia autem, quo, et fugit quam laborum corporis voluptatibus!
-        Quaerat animi vel saepe voluptatum sequi voluptatem odio consectetur
-        unde ipsam a. Sapiente saepe, est et expedita totam fugit esse at
-        corporis odit voluptatum, laborum voluptate culpa omnis nostrum ducimus
-        ab eius, reprehenderit voluptatibus libero sint accusantium dolores
-        harum? Voluptates, aperiam nobis! Rerum omnis vero consequatur veritatis
-        esse, nihil ratione voluptas tempore excepturi laudantium magnam tenetur
-        neque laborum eos sapiente? Veritatis corporis labore ab quae
-        consectetur aliquam repellat perferendis eligendi natus inventore iste
-        esse similique porro tempora quam deleniti magni accusamus debitis
-        provident, velit autem, reiciendis, at harum! Reprehenderit expedita
-        aperiam dicta. Cum ad tempore dignissimos provident, qui perspiciatis.
-        Autem omnis asperiores sapiente illo commodi architecto, temporibus
-        maxime quasi accusantium possimus! Nisi tenetur, neque blanditiis odio
-        autem veniam minus adipisci? Veniam repellat architecto neque temporibus
-        laudantium eaque ad excepturi alias sint minima, saepe animi sunt. Id
-        atque, minus, sed dicta odio cum sequi veniam a quos rem facere odit
-        quidem distinctio, soluta iste? Consectetur, vitae consequatur corrupti,
-        ducimus eius suscipit nulla provident sequi tempore eum doloribus vero.
-        Aliquam assumenda quis quo accusamus iste labore ut nihil est.
-        Repudiandae pariatur facilis, quam ipsam maiores fugit asperiores
-        eligendi consequatur? Obcaecati earum porro cumque consectetur ipsa
-        minus repellat veritatis laborum provident quo non, quisquam saepe
-        tempore velit harum suscipit nam sunt? Eveniet laudantium perspiciatis
-        fuga, non facilis atque quod, eaque repellendus libero quas rerum
-        impedit molestias unde nesciunt suscipit, nihil mollitia corporis
-        tempora voluptatibus! Voluptatum cum magni minus distinctio, suscipit
-        repellat quae eaque magnam officiis non reprehenderit ipsum omnis
-        fugiat, velit dolores harum quisquam qui fuga aliquid natus repudiandae
-        itaque nisi obcaecati. Nobis temporibus est quae maiores similique
-        incidunt voluptates atque, ab asperiores ratione.
-      </p>
+      <div id="about">
+        <h2 id="name">LEONARDO L DIOLA JR</h2>
+        <p>447 Rebolled St. Sawang Carigara, Leyte (639) 263-6428</p>
+        <br />
+        <p>
+          I am an enthusiastic, self-motivated, reliable, responsible and hard
+          working person. I am a mature team worker and adaptable to all
+          challenging situations. I am able to work well both in a team
+          environment as well as using own initiative. I am able to work well
+          under pressure and adhere to strict deadlines.
+        </p>
+        <img
+          id="linkedin"
+          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-round-icon.png"
+          width="100%"
+        />
+        <img
+          id="fb"
+          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/facebook-round-icon.svg"
+          width="100%"
+        />
+        <img
+          id="tweeter"
+          src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/twitter-round-icon.svg"
+          width="100%"
+        />
+        <img
+          id="instagram"
+          src="https://pngimg.com/uploads/instagram/small/instagram_PNG8.png"
+          width="100%"
+        />
+      </div>
+      <hr class="m-0" />
+      <div id="experience">
+        <table style="width: 100%">
+          <thead>
+            <th><h2>Experience</h2></th>
+          </thead>
+          <tr>
+            <td><p>Costumer Service Representative</p></td>
+            <td><p>2017-2018</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                supports customers by providing helpful information, answering
+                questions, and responding to complaints. They’re the front line
+                of support for clients and customers and they help ensure that
+                customers are satisfied with products, services, and features
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>Personal Advisor</p></td>
+            <td><p>2018-2019</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                supports customers by providing helpful information, answering
+                questions, and responding to complaints. They’re the front line
+                of support for clients and customers and they help ensure that
+                customers are satisfied with products, services, and features
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>Process Executive</p></td>
+            <td><p>2019-2020</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                supports customers by providing helpful information, answering
+                questions, and responding to complaints. They’re the front line
+                of support for clients and customers and they help ensure that
+                customers are satisfied with products, services, and features
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td><p>Medical Records Retrieval Representative</p></td>
+            <td><p>2020-current</p></td>
+          </tr>
+          <tr>
+            <td>
+              <p>
+                Works to procure medical documents and records about a patient’s
+                health care. We Collect medical records from health care
+                providers, such as a physician's office or hospital, and then
+                performing data entry services to place the relevant information
+                in a secure database.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <div id="education">
+        <h2>EDUCATION</h2>
+        <div class="col align-self-start">
+          <div class="row gy-2">
+            <div class="col-5">
+              <div class="p-0"><p>Sacred Heart Seminary</p></div>
+            </div>
+            <div class="col-6">
+              <div class="p-0"><p>2012 - 2016</p></div>
+            </div>
+            <div class="col-6">
+              <div class="p-0"><p>Batchelor of Arts</p></div>
+            </div>
+          </div>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div class="col align-self-start">
+          <div class="row gy-2">
+            <div class="col-5">
+              <div class="p-0"><p>Hoy Cross College of Carigara</p></div>
+            </div>
+            <div class="col-6">
+              <div class="p-0"><p>2008 - 2012</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div id="skills">
+        <h2>SKILLS</h2>
+        <p>PROGRAMMING LANGUAGES & TOOLS</p>
+        <img
+          id="html"
+          src="https://cdn.iconscout.com/icon/free/png-256/html5-1-458312.png"
+          width="100%"
+        />
+        <img
+          id="css"
+          src="https://www.iconninja.com/files/237/231/643/css-technology-website-web-internet-css3-style-icon.svg"
+          width="100%"
+        />
+        <img
+          id="bootstrap"
+          src="https://bootstrap5.hexschool.com/docs/5.0/assets/brand/bootstrap-logo-black.svg"
+          width="100%"
+          class="img-responsive"
+        />
+      </div>
+      <hr class="m-0" />
+      <div id="interests">
+        <h2>INTERESTS</h2>
+
+        <p>
+          l love learning new things everyday. i try to learn something that
+          will improve or add to my skills
+        </p>
+      </div>
+      <hr class="m-0" />
+      <div id="testimonies">
+        <h2>TESTIMONIES</h2>
+        <p>put your testimony here</p>
+      </div>
     </div>
   </body>
 </html>
