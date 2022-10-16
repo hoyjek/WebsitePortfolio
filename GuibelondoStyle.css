@@ -15,11 +15,6 @@ body{
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 40px 1fr;
 }
-main{
-    background-color: steelblue;
-    color: #fff;
-    border: skyblue 1px solid;
-}
 header{
     grid-area: header;
 }
@@ -74,23 +69,7 @@ nav a:hover{
     color: #28c997;
     
 }
-.left-side .social-links {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.left-side .social-links a{
-    color: white;
-    padding: 0.5rem;
-}
-.left-side .social-links a:hover{
-    color: #28c997;
-    transition: all 0.2s ease-in;
-}
+
 p{
     font-size: 2em;
     color: white;
@@ -131,3 +110,44 @@ main{
     grid-area: content;
     height: 1478px;
 }
+.profile, .experience, .education, .skills, .interest, .award{
+    height: 100vh;
+    background-color: rgba(09, 10, 10, 0.6);
+    border: skyblue 1px solid;
+}
+.profile{
+    color: #fff;
+    padding: 40px;
+    
+
+}
+.social-links {
+    position: absolute;
+    padding: 2rem;
+    width: 100%;
+}
+.social-links a{
+    color: white;
+    padding: 0.5rem;
+}
+.social-links a:hover{
+    color: #28c997;
+    transition: all 0.2s ease-in;
+}
+/* ----------------------------------------- */
+.experience{
+    
+}
+.education{
+
+}
+.skills{
+
+}
+.interest{
+
+}
+.award{
+
+}
+
