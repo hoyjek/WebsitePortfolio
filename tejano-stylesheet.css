@@ -1,93 +1,95 @@
-
 .sidebar {
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    background-color: #FFFFCC;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-  }
-  
-  .breakline {
-    margin-top: 100%;
-  }
-  
-  .profilepicture {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    z-index: 1;
-    border: 3px solid red;
-  }
- 
-  .sidebar a {
-    display: block;
-    color: black;
-    padding: 16px;
-    text-decoration: none;  
-  }
-  .date{
-    text-align: right;
-  }
- 
-  .sidebar a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ffffcc;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
 
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-  }
-  *{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .fontcolor{
-    color: #307D7E;
-  }
-  .center {
-    margin:auto;
-  }
-  .content {
-    margin-left: 200px;
-    padding: 400px 16px;
-    height: 1000px;
-    border-bottom: solid 1px rgb(158, 150, 150);
-  }
-.content2{
-  margin-left:200px;
+.breakline {
+  margin-top: 100%;
+}
+
+.profilepicture {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 3px solid red;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+.date {
+  text-align: right;
+}
+
+.sidebar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.fontcolor {
+  color: #307d7e;
+}
+.center {
+  margin: auto;
+}
+.content {
+  margin-left: 200px;
+  padding: 400px 16px;
+  height: 1000px;
+  border-bottom: solid 1px rgb(158, 150, 150);
+}
+.content2 {
+  margin-left: 200px;
   padding: 100px 16px;
   height: 1000px;
   border-bottom: solid 1px rgb(156, 141, 141);
-  
 }
-  .experience{
-    vertical-align: 80%;
+.experience {
+  vertical-align: 80%;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
   }
-  
-  
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
+  .sidebar a {
+    float: left;
   }
-  
-  
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
+  div.content {
+    margin-left: 0;
   }
-  .font2{
-    color: #F08080;
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
   }
-  .font3{
-    color: gray;
-  }
+}
+.font2 {
+  color: #f08080;
+}
+.font3 {
+  color: gray;
+}
+.icons {
+  margin: 0px 16px;
+}
