@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+ @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     box-sizing: border-box;
     padding: 0;
@@ -14,140 +13,115 @@ body{
     'nav content';
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 40px 1fr;
-}
-header{
-    grid-area: header;
-}
-.mainDiv{
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 0;
-    height: 38px;
-    border: skyblue solid 1px;
-    background-color: #17795a;
-}
+    
+    
+    }
+.top{
+        grid-area: header;
+        background-color:#17795a;
+        border: skyblue 2px solid;
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 40px;
+        z-index: 2;
 
+    }
+    /* ---------------------------------------------------------------------------------- */
 .left-side{
-    position: relative;
-    background: #17795a;
-    border: 1px solid rgba(0, 0, 0, 0.07);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
-    -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.0856)
-}
-.avatar{
-    position: absolute;
-    text-align: center;
-    top: 5%;
-}
-
-.avatar img{
+        height: 100vh;
+        grid-area: nav;
+        background-color: #17795a;
+        border: skyblue 2px solid;
+        min-width: 260px;
+        position: fixed;
+        width: 16rem;
+        margin-top: 40px;
+        z-index: 1;
+        margin-right: 100px;
+    }
+img{
     padding: 10px;
     width: 50%;
     height: 50%;
     border: 1px solid white;
     border-radius: 50%;
 }
-.left-side nav{
-    flex: 2;
+.avatar{
+    position: absolute;
+    text-align: center;
+    top: 5%;
+}
+.profile-details{
     height: 100vh;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     display: flex;
     margin-top: 2rem;
 }
-.left-side nav ul{
-    list-style: none;
-}
-nav a{
+a{
     color: white;
     text-decoration: none;
     margin: 1rem;
     transition: all 0.2s ease-in;
+    font-size: 20px;
+    list-style: none;
+    font-weight: bold;
 }
-nav a:hover{
+a:hover{
     color: #28c997;
-    
 }
 
-p{
-    font-size: 2em;
-    color: white;
-
-}
+    /* ------------------------------------------------------------------------------------ */
+.about-right, 
+.experience-right, 
+.education-right, 
+.skill-right, 
+.interests-right, 
+.testimonies-right{
+        height: 100vh;
+        background-color: rgba(9, 10, 10, 0.6);
+        border: skyblue 2px solid;
+        border-: ;
+        border-radius: 10px;
+        max-height: 750px;
+        margin-top: -0.50px;
+        padding-left: 5%;
+        color: #fff;
+    }
+.right-side{
+        grid-area: content;
+        z-index: 0;
+    }
+.about-right,
+.experience-right,
+.education-right,
+.skill-right,
+.interests-right,
+.testimonies-right{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-right: 5%;
+    }
 h1{
-    font-size: 4em;
-    color: white;
-}
-button{
-    outline: none;
-    border: none;
-    padding: 0.8rem 2.6rem;
-    font-weight: 500;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    border: solid #28c997;
-    color: rgb(4, 252, 219);
-    margin: 2rem;
-    transition: 0.7s;
-    font-family: sans-serif;
-}
-button:hover{
-    background-color: #28c997;
-    border-color: #28c997;
-    cursor: pointer;
-    color: white;
-    border: solid white;
-}
-.divNav{
-    grid-area: nav;
-    position: fixed;
-    width: 16rem;
-    margin-top: 40px;
-
-}
-main{
-    grid-area: content;
-    height: 1478px;
-}
-.profile, .experience, .education, .skills, .interest, .award{
-    height: 100vh;
-    background-color: rgba(09, 10, 10, 0.6);
-    border: skyblue 1px solid;
-}
-.profile{
-    color: #fff;
-    padding: 40px;
-    
-
-}
-.social-links {
-    position: absolute;
-    padding: 2rem;
-    width: 100%;
-}
-.social-links a{
-    color: white;
-    padding: 0.5rem;
-}
-.social-links a:hover{
-    color: #28c997;
-    transition: all 0.2s ease-in;
-}
-/* ----------------------------------------- */
-.experience{
-    
-}
-.education{
-
-}
-.skills{
-
-}
-.interest{
-
-}
-.award{
-
-}
-
+        margin-bottom: 0rem;
+        font-size: 4rem;
+    }
+.myAddress{
+        margin-bottom: 2rem;
+    }
+.myAbout{
+        margin-bottom: 2rem;
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+.mySocial{
+        
+    }
+.name{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
