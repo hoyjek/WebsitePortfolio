@@ -13,18 +13,21 @@ body{
     'nav content'
     'nav content';
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 80px 1fr;
-}
-header,
-.divNav,
-main{
-    background-color: steelblue;
-    color: #fff;
-    border: skyblue 1px solid;
+    grid-template-rows: 40px 1fr;
 }
 header{
     grid-area: header;
 }
+.mainDiv{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 38px;
+    border: skyblue solid 1px;
+    background-color: #17795a;
+}
+
 .left-side{
     position: relative;
     background: #17795a;
@@ -37,9 +40,7 @@ header{
     text-align: center;
     top: 5%;
 }
-.avatar p{
-    font-size: 19px;
-}
+
 .avatar img{
     padding: 10px;
     width: 50%;
@@ -68,44 +69,6 @@ nav a:hover{
     color: #28c997;
     
 }
-.left-side .social-links {
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    padding: 1rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-.left-side .social-links a{
-    color: white;
-    padding: 0.5rem;
-}
-.left-side .social-links a:hover{
-    color: #28c997;
-    transition: all 0.2s ease-in;
-}
-.right-side{
-    flex: 10;
-    height: 100vh;
-    background-image: url(/image/alonedark.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-}
-.right-side .content{
-    position: absolute;
-    background-color: rgba(09, 10, 10, 0.6);
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-
 
 p{
     font-size: 2em;
@@ -128,7 +91,6 @@ button{
     margin: 2rem;
     transition: 0.7s;
     font-family: sans-serif;
-    
 }
 button:hover{
     background-color: #28c997;
@@ -139,7 +101,53 @@ button:hover{
 }
 .divNav{
     grid-area: nav;
+    position: fixed;
+    width: 16rem;
+    margin-top: 40px;
+
 }
 main{
     grid-area: content;
+    height: 1478px;
 }
+.profile, .experience, .education, .skills, .interest, .award{
+    height: 100vh;
+    background-color: rgba(09, 10, 10, 0.6);
+    border: skyblue 1px solid;
+}
+.profile{
+    color: #fff;
+    padding: 40px;
+    
+
+}
+.social-links {
+    position: absolute;
+    padding: 2rem;
+    width: 100%;
+}
+.social-links a{
+    color: white;
+    padding: 0.5rem;
+}
+.social-links a:hover{
+    color: #28c997;
+    transition: all 0.2s ease-in;
+}
+/* ----------------------------------------- */
+.experience{
+    
+}
+.education{
+
+}
+.skills{
+
+}
+.interest{
+
+}
+.award{
+
+}
+
