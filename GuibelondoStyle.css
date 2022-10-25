@@ -14,7 +14,7 @@ body{
     'header header'
     'nav content'
     'nav content';
-    grid-template-columns: 250px 5fr;
+    grid-template-columns: 300px 5fr;
     grid-template-rows: 40px 1fr;
     }
 .top{
@@ -26,7 +26,6 @@ body{
         right: 0;
         height: 40px;
         z-index: 2;
-
     }
     /* ---------------------------------------------------------------------------------- */
 .left-side{
@@ -34,7 +33,7 @@ body{
         grid-area: nav;
         background-color: #17795a;
         border: skyblue 2px solid;
-        min-width: 260px;
+        min-width: 300px;
         position: fixed;
         width: 16rem;
         margin-top: 40px;
@@ -68,6 +67,7 @@ a{
     font-size: 20px;
     list-style: none;
     font-weight: bold;
+    font-size: 2rem;
 }
 a:hover{
     color: #28c997;
@@ -106,17 +106,28 @@ a:hover{
         justify-content: center;
         padding-right: 5%;
     }
+p{
+    font-size: 2rem;
+
+}
 h1{
         margin-bottom: 0rem;
-        font-size: 4rem;
+        font-size: 6rem;
     }
+h2, 
+.date{
+    font-size: 31px;
+    font-weight: bold;
+}
 .myAddress{
         margin-bottom: 2rem;
+        font-size: 1.9rem;
+        font-weight: bold;
     }
 .myAbout{
         margin-bottom: 2rem;
         letter-spacing: 2px;
-        font-size: 15px;
+        font-size: 30px;
     }
 .mySocial{
         
